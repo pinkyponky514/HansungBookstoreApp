@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3E5-Ys-vlE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈-->
+        <scene sceneID="afJ-MH-E0x">
+            <objects>
+                <viewController id="SxM-AK-POd" customClass="HomeController" customModule="HansungBookstoreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vd9-Ok-OPP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xJx-KM-OLK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="house.fill" catalog="system" id="c7Y-9b-Ema"/>
+                    <navigationItem key="navigationItem" id="HpB-ch-Bbe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Si-0e-VYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="-850"/>
+        </scene>
+        <!--도서검색-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BookController" customModule="HansungBookstoreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="도서검색" image="book" catalog="system" id="63Y-kR-nyD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.6259541984732" y="3.5211267605633805"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="0hw-jT-5mg">
+            <objects>
+                <viewController title="마이페이지" id="kYW-ff-c1P" customClass="LoginController" customModule="HansungBookstoreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3g3-Qn-5IX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HJ1-zf-ceL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person.circle.fill" catalog="system" id="LF8-Vf-tvy"/>
+                    <navigationItem key="navigationItem" id="yJS-yX-dJu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NoH-NF-dDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37.404580152671755" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="A9W-g4-t9E">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3E5-Ys-vlE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FJu-F1-4b3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hmc-Ui-ECn"/>
+                        <segue destination="SxM-AK-POd" kind="relationship" relationship="viewControllers" id="pEA-GB-XOQ"/>
+                        <segue destination="kYW-ff-c1P" kind="relationship" relationship="viewControllers" id="ITq-bc-MNn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMy-cr-FKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953.43511450381675" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
